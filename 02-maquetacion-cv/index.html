@@ -2,69 +2,94 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Curriculum Vitae</title>
+    <title>Curriculum Vitae - Juan Ezequiel Matus Moreno</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-<header>
-    <h1>Curriculum Vitae - Juan Ezequiel Matus Moreno</h1>
+<body class="page">
+
+<header class="site-header">
+    <h1>Juan Ezequiel Matus Moreno</h1>
     <p>Estudiante de Ingeniería en Diseño Multimedia</p>
 </header>
 
-<nav>
+<nav class="site-nav">
     <a href="index.html">Inicio</a>
     <a href="portafolio.html">Portafolio</a>
 </nav>
 
-<main>
+<main class="container">
 
-<section>
-    <img src="img/Marca personal.png" width="500">
-    <h2>Sobre mí</h2>
-    <p>Me llamo Juan Ezequiel Matus Moreno, soy estudiante de ingeniería en diseño multimedia con grandes habilidades en programación gráfica, diseño y marketing digital, modelado 3D e inteligencia artificial. Mis proyectos siempre destacan por la formalidad, profesionalidad, puntualidad y, de ser necesario, por el minimalismo (reducir gastos de recursos y ofrecer grandes resultados) con los que los desarrollo.</p>
-</section>
+    <!-- SOBRE MÍ -->
+    <section class="card hero">
+        <img src="img/Marca personal.png" alt="Marca personal">
 
-<section>
-    <h2>Conocimientos</h2>
-    <P>Tengo una gran habilidad en herramientas de diferentes ámbitos de la industria multimedia.</P>
-    <ul>
-        <li>Blender <img src="img/Blender.png" width="100"></li>
-        <li>Canva <img src="img/Canva.png" width="100"></li>
-        <li>Adobe Photoshop <img src="img/Adobe Photoshop.png" width="100"></li>
-        <li>Adobe Illustrator <img src="img/Adobe Illustrator.png" width="100"></li>
-        <li>MATLAB <img src="img/MATLAB.png" width="100"></li>
-        <li>Embarcadero C++ Builder <img src="img/Embarcadero C++ Builder.png" width="100"></li>
-        <li>Ibis Paint X <img src="img/Ibis Paint X.png" width="100"></li>
-        <li>Paquetería Microsoft Office <img src="img/Microsoft Office.png" width="100"></li>
-        <li>Paquetería WPS Office <img src="img/WPS.png" width="100"></li>
-        <li>OBS Studio <img src="img/OBS Studio.png" width="100"></li>
-        <li>ElevenLabs <img src="img/ElevenLabs.png" width="100"></li>
-        <li>Olive Video Editor <img src="img/Olive Video Editor.png" width="100"></li>
-        <li>Hugging Face Spaces AI <img src="img/Hugging Face Spaces AI.png" width="100"></li>
-    </ul>
-</section>
+        <div>
+            <h2>Sobre mí</h2>
+            <p>
+                Me llamo Juan Ezequiel Matus Moreno, soy estudiante de ingeniería en diseño multimedia con grandes habilidades en programación gráfica, diseño y marketing digital, modelado 3D e inteligencia artificial.
+            </p>
+            <p>
+                Mis proyectos destacan por su formalidad, profesionalismo y enfoque minimalista, optimizando recursos sin sacrificar calidad.
+            </p>
+        </div>
+    </section>
 
-<section>
-    <h2>Educación</h2>
-    <p>Estudiante de Licenciatura en Ingeniería en Diseño Multimedia de la Universidad Autónoma del Carmen.</p>
-</section>
+    <!-- CONOCIMIENTOS -->
+    <section class="card">
+        <h2>Conocimientos</h2>
+        <p>Tengo habilidades en herramientas clave del ámbito multimedia:</p>
 
-<section>
-    <h2>Contacto</h2>
-    <p>Email: JuanMmultimedia@outlook.com</p>
-    <p>Ubicación: Ciudad del Carmen, Campeche, México.</p>
-</section>
+        <ul class="skills-grid">
+            <li>Blender <img src="img/Blender.png" alt="Blender"></li>
+            <li>Canva <img src="img/Canva.png" alt="Canva"></li>
+            <li>Adobe Photoshop <img src="img/Adobe Photoshop.png" alt="Photoshop"></li>
+            <li>Adobe Illustrator <img src="img/Adobe Illustrator.png" alt="Illustrator"></li>
+            <li>MATLAB <img src="img/MATLAB.png" alt="MATLAB"></li>
+            <li>Embarcadero C++ Builder <img src="img/Embarcadero C++ Builder.png" alt="C++ Builder"></li>
+            <li>Ibis Paint X <img src="img/Ibis Paint X.png" alt="Ibis Paint"></li>
+            <li>Microsoft Office <img src="img/Microsoft Office.png" alt="Office"></li>
+            <li>WPS Office <img src="img/WPS.png" alt="WPS"></li>
+            <li>OBS Studio <img src="img/OBS Studio.png" alt="OBS"></li>
+            <li>ElevenLabs <img src="img/ElevenLabs.png" alt="ElevenLabs"></li>
+            <li>Olive Video Editor <img src="img/Olive Video Editor.png" alt="Olive"></li>
+            <li>Hugging Face Spaces AI <img src="img/Hugging Face Spaces AI.png" alt="Hugging Face"></li>
+        </ul>
+    </section>
 
-<section>
-    <h2>Portafolio</h2>
-    <a href="proyectos1.html">Programación gráfica</a><br>
-    <a href="proyectos2.html">Diseño digital</a><br>
-    <a href="proyectos3.html">Modelado 3D</a><br>
-    <a href="proyectos4.html">Inteligencia artificial</a><br>
-    <a href="proyectos5.html">Marketing digital</a>
-</section>
+    <!-- EDUCACIÓN -->
+    <section class="card">
+        <h2>Educación</h2>
+        <p>
+            Estudiante de Ingeniería en Diseño Multimedia en la Universidad Autónoma del Carmen.
+        </p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="card">
+        <h2>Contacto</h2>
+        <p>Email: JuanMmultimedia@outlook.com</p>
+        <p>Ubicación: Ciudad del Carmen, Campeche, México</p>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section class="card">
+        <h2>Portafolio</h2>
+
+        <div class="project-links">
+            <a href="proyectos1.html">Programación gráfica</a>
+            <a href="proyectos2.html">Diseño digital</a>
+            <a href="proyectos3.html">Modelado 3D</a>
+            <a href="proyectos4.html">Inteligencia artificial</a>
+            <a href="proyectos5.html">Marketing digital</a>
+        </div>
+    </section>
 
 </main>
+
+<footer>
+    <p>© 2026 Juan Ezequiel Matus Moreno</p>
+</footer>
 
 </body>
 </html>
