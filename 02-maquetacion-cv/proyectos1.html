@@ -2,109 +2,47 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Programación gráfica</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Proyectos 1</title>
 </head>
-<body>
 
-<h1>Programación gráfica</h1>
-<h2>Emulación de fuerzas sobre un puente</h2>
+<body class="page">
 
-<img src="img/Proyecto puente (1).PNG" width="500">
+<header class="site-header">
+    <h1>Programación gráfica</h1>
+</header>
 
-<h3>1. Introducción</h3>
+<nav class="site-nav">
+    <a href="portafolio.html">Volver</a>
+</nav>
 
-<p>El objetivo de este proyecto fue desarrollar una interfaz en C++ Builder 12 utilizando FMX que permita:</p>
-<ul>
-    <li>Ingresar tres fuerzas con su respectiva magnitud y dirección (ángulo en grados).</li>
-    <li>Calcular la fuerza resultante en una junta crítica de un puente.</li>
-    <li>Determinar si el sistema se encuentra en equilibrio.</li>
-    <li>Graficar las fuerzas y la fuerza resultante en un plano cartesiano.</li>
-</ul>
-<p>Esto permite validar si la estructura mantiene su estabilidad (resultante ≈ 0) o si existe riesgo de colapso.</p>
+<main class="container">
 
-<h3>2. Modelado Matemático</h3>
+<section class="card">
+    <h2>Emulación de fuerzas sobre un puente</h2>
 
-<p>Cuando varias fuerzas actúan sobre un punto, se pueden descomponer en sus componentes X e Y usando fórmulas trigonométricas:</p>
-<ul>
-    <li>Fx = F * cos(θ)</li>
-    <li>Fy = F * sin(θ)</li>
-</ul>
-<p>La suma de todas las componentes da la fuerza neta en cada dirección:</p>
-<ul>
-    <li>Fx_total = Fx1 + Fx2 + Fx3</li>
-    <li>Fy_total = Fy1 + Fy2 + Fy3</li>
-</ul>
-<p>La magnitud de la fuerza resultante se calcula usando el teorema de Pitágoras:</p>
-<ul>
-    <li>Fr = sqrt(Fx_total^2 + Fy_total^2)</li>
-</ul>
-<p>Si Fr es cercano a cero (por debajo de un umbral definido, en este caso 1.0 N), el sistema se considera en equilibrio.</p>
+    <div class="media-grid">
+        <img src="img/Proyecto puente (1).PNG">
+        <img src="img/Proyecto puente (2).png">
+    </div>
 
-<h3>3. Implementación en C++ Builder</h3>
+    <h3>Descripción:</h3>
+    <p>Proyecto desarrollado en C++ Builder para analizar fuerzas en una estructura.</p>
 
-<h4>3.1 Entradas de usuario:</h4>
-<ul>
-    <li>Magnitud de cada fuerza (N).</li>
-    <li>Ángulo de cada fuerza (grados).</li>
-</ul>
+    <h3>Características:</h3>
+    <ul>
+        <li>Cálculo de fuerzas en X y Y.</li>
+        <li>Visualización gráfica.</li>
+        <li>Detección de equilibrio.</li>
+    </ul>
 
-<h4>3.2 Procesamiento de datos:</h4>
-<ul>
-    <li>Conversión de grados a radianes.</li>
-    <li>Cálculo de componentes X y Y para cada fuerza.</li>
-    <li>Suma de componentes para obtener la fuerza total.</li>
-    <li>Evaluación de la magnitud de la fuerza resultante.</li>
-    <li>Determinación de equilibrio del sistema.</li>
-</ul>
+</section>
 
-<h4>3.3 Visualización de resultados:</h4>
-<ul>
-    <li>Resultados numéricos mostrados en un Memo (Memo1).</li>
-    <li>Gráfica de las fuerzas mediante un Image (ImageCanvas).</li>
-</ul>
-<p>Las fuerzas se dibujan como líneas de colores diferentes:</p>
-<ul>
-    <li>F1: Rojo</li>
-    <li>F2: Verde</li>
-    <li>F3: Azul</li>
-    <li>Fuerza resultante: Negro</li>
-</ul>
+<nav class="site-nav">
+    <a href="portafolio.html">Volver</a>
+</nav>
 
-<h3>4. Código Base</h3>
-
-<p>El archivo principal (Unit1.cpp) contiene:</p>
-<ul>
-    <li>Manejo de errores para entradas inválidas.</li>
-    <li>Cálculo vectorial de las fuerzas.</li>
-    <li>Dibujo automático de los vectores en pantalla.</li>
-    <li>Indicador visual de la estabilidad de la junta.</li>
-</ul>
-<p>Se emplearon funciones estándar de math.h (cos, sin, sqrt) y se utilizó TAlphaColors para asignar colores a los vectores.</p>
-
-<h3>5. Resultados</h3>
-
-<p>La aplicación permite:</p>
-<ul>
-    <li>Introducir valores personalizados de magnitud y ángulo para cada fuerza.</li>
-    <li>Obtener el análisis de equilibrio en segundos.</li>
-    <li>Visualizar gráficamente la dirección y magnitud de cada fuerza.</li>
-    <li>Detectar fácilmente si el sistema se encuentra estable o inestable.</li>
-</ul>
-<p>Esto proporciona una herramienta útil para el análisis preliminar de juntas estructurales en proyectos de ingeniería civil.</p>
-
-<img src="img/Proyecto puente (2).png" width="500">
-
-<h3>6. Conclusiones</h3>
-
-<ul>
-    <li>La correcta descomposición y suma de fuerzas es fundamental para evaluar la estabilidad de estructuras.</li>
-    <li>Un sistema gráfico ayuda a interpretar de forma visual la situación de cargas.</li>
-    <li>C++ Builder, utilizando FMX, ofrece una plataforma eficiente para integrar cálculos matemáticos y representación visual en un solo entorno.</li>
-</ul>
-<p>El proyecto cumple con los objetivos planteados y sirve como base para desarrollos más avanzados en análisis estructural en 2D.</p>
-
-<p><a href="portafolio.html">Volver al portafolio</a></p>
+</main>
 
 </body>
 </html>
